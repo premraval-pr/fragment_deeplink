@@ -57,7 +57,6 @@ public class MainActivity extends AppCompatActivity implements AllCountriesFragm
 
 
         allCountriesFragment = new AllCountriesFragment(CountryContent.ITEMS,this);
-
         getSupportFragmentManager()
                 .beginTransaction()
                 .replace(R.id.host1,allCountriesFragment)
@@ -69,6 +68,7 @@ public class MainActivity extends AppCompatActivity implements AllCountriesFragm
                 .beginTransaction()
                 .replace(R.id.host2,prefCountriesFragment)
                 .commit();
+
         maxWishListSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
